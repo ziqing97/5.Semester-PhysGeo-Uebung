@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{setspace,graphicx,amsmath,geometry,fontspec,titlesec,soul,bm,subfigure}
+\titleformat{\section}[block]{\LARGE\bfseries}{\arabic{section}}{1em}{}[]
+\titleformat{\subsection}[block]{\Large\bfseries\mdseries}{\arabic{section}.\arabic{subsection}}{1em}{}[]
+\titleformat{\subsubsection}[block]{\normalsize\bfseries}{\arabic{subsection}-\alph{subsubsection}}{1em}{}[]
+\titleformat{\paragraph}[block]{\small\bfseries}{[\arabic{paragraph}]}{1em}{}[]
+\setmainfont{Times New Roman}
+\renewcommand{\baselinestretch}{1.15}
+\renewcommand\contentsname{Inhaltverzeichnis}
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\begin{document}
+	\newpagestyle{main}{            
+		\sethead{Ziqing Yu}{Physikalische Geodäsie Übung 3}{3218051}     
+		\setfoot{}{\thepage}{}     
+		\headrule                                     
+		\footrule                                       
+	}
+	\pagestyle{main}
+\tableofcontents
+\newpage
+\section{Superposition of Earth's and Moon's gravitational fields}
+k ist in dieser Aufgabe als 1 gewählt. Die Potential und Anziehung werden nach folgende Formeln gerechnet
+
+\[ V = \begin{cases}
+\frac{4}{3} \pi G \rho R^3 \frac{1}{r} \quad (r > R)\\
+2 \pi G \rho (R^2 - \frac{1}{3} r^2) \quad  (r < R)
+\end{cases} \]
+
+\[ a = \begin{cases}
+- \frac{4}{3} \pi G \rho R^3 \frac{1}{r^3} \quad (r > R)\\
+- \frac{4}{3} \ pi G \rho r \quad (r < R)
+\end{cases}
+\]
+
+\begin{equation*}
+V_{gesamt} = V_{Earth} + V_{Moon}
+\end{equation*}
+\begin{equation*}
+a_{gesamt} = a_{Earth} + a_{Moon}
+\end{equation*}
+Die Darstellung von Potential und Anziehung 
+\newpage
+\section{Gravitational potential and attraction of spherical shells}
+Die Potential und Anziehung werden in 2 Teile bzw. Kern und Mantel berechnet. 
+\[ V_{c} = \begin{cases}
+\frac{4}{3} \pi G \rho R_c^3 \frac{1}{r} \quad &(r > R_c)\\
+2 \pi G \rho (R_c^2 - \frac{1}{3} r^2) \quad  &(r < R_c)
+\end{cases}
+\]
+\[ V_{m} = \begin{cases}
+\frac{4}{3} \pi G \rho (R_m^3 - R_c^3) \frac{1}{r} \quad &(r > R_m) \\
+2 \pi G \rho (R_m^2 - \frac{1}{3} r^2) - \frac{4}{3} \pi G \rho R_c^3 \frac{1}{r} \quad &(R_c < r < R_m) \\
+2 \pi G \rho (R_m^2 - R_c^2) \quad &(r < R_c)
+\end{cases}
+\]
+\begin{equation*}
+V = V_c + V_m
+\end{equation*}
+\[ a_{c} = \begin{cases}
+\frac{4}{3} \pi G \rho R_c^3 \frac{1}{r} \quad &(r > R_c)\\
+2 \pi G \rho (R_c^2 - \frac{1}{3} r^2) \quad  &(r < R_c)
+\end{cases}
+\]
+\[ a_{m} = \begin{cases}
+- \frac{4}{3} \pi G \rho (R_m^3 - R_c^3) \frac{1}{r^2} \quad &(r > R_m) \\
+- \frac{4}{3} \pi G \rho (r^3 - R_c^3) \frac{1}{r^2} \quad &(R_c < r < R_m) \\
+0 \quad \quad \quad \quad \quad \quad \quad \quad \quad &(r < R_c)
+\end{cases}
+\]
+\newline
+\begin{equation*}
+V = V_c + V_m \quad a = a_c + a_m
+\end{equation*}
+Die Darstellung von Potential und Anziehung unter dieser vereinfachten Modell. 
+
+\newpage
+\section{PREM density model of the Earth}
+
+\end{document}

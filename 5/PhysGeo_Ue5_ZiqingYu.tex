@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{setspace,graphicx,amsmath,geometry,fontspec,titlesec,soul,bm,subfigure}
+\titleformat{\section}[block]{\LARGE\bfseries}{\arabic{section}}{1em}{}[]
+\titleformat{\subsection}[block]{\Large\bfseries\mdseries}{\arabic{section}.\arabic{subsection}}{1em}{}[]
+\titleformat{\subsubsection}[block]{\normalsize\bfseries}{\arabic{subsection}-\alph{subsubsection}}{1em}{}[]
+\titleformat{\paragraph}[block]{\small\bfseries}{[\arabic{paragraph}]}{1em}{}[]
+\setmainfont{Times New Roman}
+\renewcommand{\baselinestretch}{1.15}
+\renewcommand\contentsname{Inhaltverzeichnis}
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\begin{document}
+	\newpagestyle{main}{            
+		\sethead{Ziqing Yu}{Physikalische Geodäsie Übung 5}{3218051}     
+		\setfoot{}{\thepage}{}     
+		\headrule                                     
+		\footrule                                       
+	}
+	\pagestyle{main}
+\tableofcontents
+\newpage
+\section{Ableitung der Gleichung}
+Divergenz von Vektorfeld
+\begin{equation*}
+div \bm{a} = \nabla \cdot \bm{a} = \lim\limits_{V \rightarrow 0} \frac{\iint_S \bm{a} \cdot d \bm{S}}{V}
+\end{equation*}
+Vektorfluss auf der Erdebene
+\begin{equation*}
+\iint_S \bm{a} \cdot dS = -4 \pi G \iiint_V \rho  dV
+\end{equation*}
+\begin{equation*}
+div \bm{a} = \begin{cases}
+& -4 \pi G \rho \\
+& 0
+\end{cases}
+\end{equation*}
+Poisson Gleichung
+\begin{equation*}
+div \bm{a} = \nabla \cdot \bm{a} = \nabla \nabla \Phi = \Delta \Phi = -4 \pi G \rho
+\end{equation*}
+Masse
+\begin{equation*}
+-4 \pi G \iiint_V \rho dV = \iint_S \frac{\partial \Phi}{\partial n} dS \Rightarrow M = \frac{1}{4 \pi G} \iint_S g dS
+\end{equation*}
+\begin{equation*}
+\delta M = \frac{1}{4 \pi G} \iint_{S_0} \delta g dS
+\end{equation*}
+\section{Rechnung mit Gauss'sche Gleichung}
+\begin{equation*}
+\delta M = \frac{1}{4 \pi G} \iint_{S_0} \delta g dS = \frac{\Delta x \Delta y}{4 \pi G} \sum_{i = 1}^{i_{max}} \sum_{j = 1}^{j_{max}} \delta g_{ij} = -1,0924 \cdot 10^{12} kg
+\end{equation*}
+\section{Rechnung mit Volumen}
+\begin{equation*}
+\delta M = V \delta \rho = -1,500 \cdot 10^{12} kg
+\end{equation*}
+Dieses Ergebnis hat die gleiche Größeordnung wie das Ergebnis aus Gauss'sche Gleichung, aber die Genauigkeit ist niedriger. 
+\end{document}

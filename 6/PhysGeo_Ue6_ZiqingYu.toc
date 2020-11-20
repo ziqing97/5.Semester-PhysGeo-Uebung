@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Task 1}{2}% 
+\contentsline {subsection}{\numberline {1.1}Rodrigues-Ferrers}{2}% 
+\contentsline {subsection}{\numberline {1.2}Rekursiv}{3}% 
+\contentsline {section}{\numberline {2}Task 2}{4}% 
+\contentsline {section}{\numberline {3}task 3}{5}% 
+\contentsline {section}{\numberline {4}Task 4}{6}% 
